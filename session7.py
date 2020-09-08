@@ -73,6 +73,7 @@ def shift_characters(string):
     This function takes string as input and return the string which is shifted 5 times. 
     If it is at the edge it will be rounded back to first element.
     Eg . z will be shifted to e.
+    
     """
     if(isinstance(string, str)):
         return "".join([chr(int((ord(i) + 5 - 97)%26 )+97) for i in string.lower()])
